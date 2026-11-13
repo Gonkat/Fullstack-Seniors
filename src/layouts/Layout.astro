@@ -1,0 +1,25 @@
+---
+import '../styles/global.css';
+
+const { title = 'Модус Сигнал — обратная связь сотрудников' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta
+      name="description"
+      content="Демонстрационный MVP системы обратной связи и предложений сотрудников ГК «Модус Трейд»."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230c1626'/%3E%3Cpath d='M9 21V11l7 5 7-5v10' stroke='%23e8a33d' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

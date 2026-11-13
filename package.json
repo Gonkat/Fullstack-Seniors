@@ -1,0 +1,27 @@
+{
+  "name": "modus-signal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Модус Сигнал — MVP системы обратной связи и предложений сотрудников ГК «Модус Трейд» (хакатон)",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "npm run build && node server/index.js",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "server": "node server/index.js",
+    "test": "node test/smoke.test.js",
+    "reset": "node -e \"require('./server/store').reset(); console.log('Демо-данные восстановлены')\"",
+    "seed:export": "node scripts/export-seed.js",
+    "seed:mokky": "node scripts/export-seed.js && node scripts/seed-mokky.js"
+  },
+  "engines": {
+    "node": ">=20.3.0"
+  },
+  "dependencies": {
+    "@astrojs/preact": "^4.1.3",
+    "astro": "^5.18.2",
+    "express": "^5.3.0",
+    "preact": "^10.29.8"
+  }
+}

@@ -1,0 +1,1804 @@
+{
+ "meta": {
+  "seededAt": "2026-11-11T18:12:28.310Z",
+  "schemaVersion": 1,
+  "demo": true
+ },
+ "users": [
+  {
+   "id": "u-anna",
+   "name": "Анна Соколова",
+   "role": "employee",
+   "department": "Закупки",
+   "position": "Менеджер по закупкам",
+   "managedCategories": []
+  },
+  {
+   "id": "u-igor",
+   "name": "Игорь Мельник",
+   "role": "employee",
+   "department": "Проектирование",
+   "position": "Инженер-проектировщик",
+   "managedCategories": []
+  },
+  {
+   "id": "u-maria",
+   "name": "Мария Ким",
+   "role": "employee",
+   "department": "Бухгалтерия",
+   "position": "Специалист по документообороту",
+   "managedCategories": []
+  },
+  {
+   "id": "u-dmitry",
+   "name": "Дмитрий Орлов",
+   "role": "employee",
+   "department": "Продажи",
+   "position": "Менеджер по продажам",
+   "managedCategories": []
+  },
+  {
+   "id": "u-elena",
+   "name": "Елена Волкова",
+   "role": "employee",
+   "department": "Проектный офис",
+   "position": "Координатор проекта",
+   "managedCategories": []
+  },
+  {
+   "id": "u-sergey",
+   "name": "Сергей Абрамов",
+   "role": "employee",
+   "department": "Проектный офис",
+   "position": "Руководитель проекта",
+   "managedCategories": []
+  },
+  {
+   "id": "u-olga",
+   "name": "Ольга Лебедева",
+   "role": "employee",
+   "department": "Административный отдел",
+   "position": "Офис-менеджер",
+   "managedCategories": []
+  },
+  {
+   "id": "m-pavel",
+   "name": "Павел Гусев",
+   "role": "manager",
+   "department": "Закупки",
+   "position": "Руководитель закупок",
+   "managedCategories": [
+    "c-01"
+   ]
+  },
+  {
+   "id": "m-natalia",
+   "name": "Наталья Ершова",
+   "role": "manager",
+   "department": "Продажи",
+   "position": "Руководитель направления",
+   "managedCategories": [
+    "c-02",
+    "c-10",
+    "c-11",
+    "c-15"
+   ]
+  },
+  {
+   "id": "m-andrey",
+   "name": "Андрей Титов",
+   "role": "manager",
+   "department": "Проектирование",
+   "position": "Руководитель проектирования",
+   "managedCategories": [
+    "c-14"
+   ]
+  },
+  {
+   "id": "m-irina",
+   "name": "Ирина Данилова",
+   "role": "manager",
+   "department": "Бухгалтерия",
+   "position": "Руководитель бухгалтерии",
+   "managedCategories": [
+    "c-05"
+   ]
+  },
+  {
+   "id": "m-viktor",
+   "name": "Виктор Соловьёв",
+   "role": "manager",
+   "department": "IT",
+   "position": "Руководитель IT",
+   "managedCategories": [
+    "c-07",
+    "c-12"
+   ]
+  },
+  {
+   "id": "m-svetlana",
+   "name": "Светлана Романова",
+   "role": "manager",
+   "department": "HR",
+   "position": "Руководитель обучения и внутренних коммуникаций",
+   "managedCategories": [
+    "c-04",
+    "c-08",
+    "c-18"
+   ]
+  },
+  {
+   "id": "m-oleg",
+   "name": "Олег Крылов",
+   "role": "manager",
+   "department": "Административный отдел",
+   "position": "Административный руководитель",
+   "managedCategories": [
+    "c-16"
+   ]
+  },
+  {
+   "id": "m-egor",
+   "name": "Егор Лапшин",
+   "role": "manager",
+   "department": "Проектный офис",
+   "position": "Руководитель проектов",
+   "managedCategories": [
+    "c-13"
+   ]
+  },
+  {
+   "id": "m-alina",
+   "name": "Алина Ковалёва",
+   "role": "manager",
+   "department": "Управление процессами",
+   "position": "Ответственный за процессы",
+   "managedCategories": [
+    "c-06"
+   ]
+  },
+  {
+   "id": "m-roman",
+   "name": "Роман Захаров",
+   "role": "manager",
+   "department": "Проектирование",
+   "position": "Ответственный за номенклатуру",
+   "managedCategories": [
+    "c-03"
+   ]
+  },
+  {
+   "id": "m-ilya",
+   "name": "Илья Кузнецов",
+   "role": "manager",
+   "department": "Продажи",
+   "position": "Ответственный за договоры",
+   "managedCategories": [
+    "c-09"
+   ]
+  },
+  {
+   "id": "m-marina",
+   "name": "Марина Белова",
+   "role": "manager",
+   "department": "Бухгалтерия",
+   "position": "Администратор документов",
+   "managedCategories": [
+    "c-17"
+   ]
+  },
+  {
+   "id": "a-alexey",
+   "name": "Алексей Смирнов",
+   "role": "admin",
+   "department": "IT",
+   "position": "Администратор системы",
+   "managedCategories": []
+  }
+ ],
+ "categories": [
+  {
+   "id": "c-01",
+   "name": "Межотдельное взаимодействие",
+   "department": "Закупки",
+   "assigneeId": "m-pavel",
+   "description": "Заявки, передача данных между подразделениями",
+   "isActive": true
+  },
+  {
+   "id": "c-02",
+   "name": "Информационная прозрачность",
+   "department": "Продажи",
+   "assigneeId": "m-natalia",
+   "description": "Доступ к статусам и контрольным датам",
+   "isActive": true
+  },
+  {
+   "id": "c-03",
+   "name": "Каталог и данные",
+   "department": "Проектирование",
+   "assigneeId": "m-roman",
+   "description": "Номенклатура, карточки позиций, спецификации",
+   "isActive": true
+  },
+  {
+   "id": "c-04",
+   "name": "Обучение",
+   "department": "HR",
+   "assigneeId": "m-svetlana",
+   "description": "Внутренние занятия, материалы, календарь",
+   "isActive": true
+  },
+  {
+   "id": "c-05",
+   "name": "Документооборот",
+   "department": "Бухгалтерия",
+   "assigneeId": "m-irina",
+   "description": "Пакеты документов, этапы согласования",
+   "isActive": true
+  },
+  {
+   "id": "c-06",
+   "name": "Регламенты",
+   "department": "Управление процессами",
+   "assigneeId": "m-alina",
+   "description": "Инструкции, памятки, владельцы процессов",
+   "isActive": true
+  },
+  {
+   "id": "c-07",
+   "name": "Интеграции и IT",
+   "department": "IT",
+   "assigneeId": "m-viktor",
+   "description": "Корпоративные системы и обмен данными",
+   "isActive": true
+  },
+  {
+   "id": "c-08",
+   "name": "Знания и наставничество",
+   "department": "HR",
+   "assigneeId": "m-svetlana",
+   "description": "Передача опыта, база знаний",
+   "isActive": true
+  },
+  {
+   "id": "c-09",
+   "name": "Договорная работа",
+   "department": "Продажи",
+   "assigneeId": "m-ilya",
+   "description": "Приложения, согласования, версии договоров",
+   "isActive": true
+  },
+  {
+   "id": "c-10",
+   "name": "Задачи и коммуникации",
+   "department": "Продажи",
+   "assigneeId": "m-natalia",
+   "description": "Правила закрытия задач и обсуждений",
+   "isActive": true
+  },
+  {
+   "id": "c-11",
+   "name": "Оперативность",
+   "department": "Продажи",
+   "assigneeId": "m-natalia",
+   "description": "Сроки ответа смежных подразделений",
+   "isActive": true
+  },
+  {
+   "id": "c-12",
+   "name": "Коммуникации",
+   "department": "IT",
+   "assigneeId": "m-viktor",
+   "description": "Каналы связи, фиксация итоговых решений",
+   "isActive": true
+  },
+  {
+   "id": "c-13",
+   "name": "Проектная деятельность",
+   "department": "Проектный офис",
+   "assigneeId": "m-egor",
+   "description": "Спецификации, версии, изменения состава",
+   "isActive": true
+  },
+  {
+   "id": "c-14",
+   "name": "Планирование ресурсов",
+   "department": "Проектирование",
+   "assigneeId": "m-andrey",
+   "description": "Загрузка команд и сроки запуска",
+   "isActive": true
+  },
+  {
+   "id": "c-15",
+   "name": "Постановка задач",
+   "department": "Продажи",
+   "assigneeId": "m-natalia",
+   "description": "Форматы поручений и шаблоны задач",
+   "isActive": true
+  },
+  {
+   "id": "c-16",
+   "name": "Корпоративная среда",
+   "department": "Административный отдел",
+   "assigneeId": "m-oleg",
+   "description": "Офис, зоны отдыха, условия работы",
+   "isActive": true
+  },
+  {
+   "id": "c-17",
+   "name": "Хранение документов",
+   "department": "Бухгалтерия",
+   "assigneeId": "m-marina",
+   "description": "Общие папки, правила именования, архив",
+   "isActive": true
+  },
+  {
+   "id": "c-18",
+   "name": "Прозрачность результатов",
+   "department": "HR",
+   "assigneeId": "m-svetlana",
+   "description": "Публикация итогов внутренних улучшений",
+   "isActive": true
+  }
+ ],
+ "appeals": [
+  {
+   "id": "a-001",
+   "number": "A-001",
+   "type": "problem",
+   "categoryId": "c-01",
+   "department": "Закупки",
+   "priority": "medium",
+   "status": "new",
+   "authorId": "u-anna",
+   "assigneeId": "m-pavel",
+   "subject": "В заявках на закупку не хватает назначения и параметров изделия",
+   "description": "В заявках на приобретение оборудования иногда не хватает назначения изделия и требуемых параметров. Из-за этого приходится возвращаться к автору заявки с уточнениями, а срок подбора оборудования увеличивается.",
+   "solution": "Добавить в форму заявки обязательные поля «назначение изделия» и «требуемые параметры», чтобы сократить число уточнений.",
+   "attachments": [],
+   "createdAt": "2026-11-10T22:12:28.310Z",
+   "updatedAt": "2026-11-10T22:12:28.310Z",
+   "firstResponseAt": null,
+   "resolvedAt": null,
+   "closedAt": null,
+   "dueAt": null,
+   "decision": null
+  },
+  {
+   "id": "a-002",
+   "number": "A-002",
+   "type": "suggestion",
+   "categoryId": "c-02",
+   "department": "Продажи",
+   "priority": "medium",
+   "status": "in_review",
+   "authorId": "u-anna",
+   "assigneeId": "m-natalia",
+   "subject": "Показывать поставщикам краткий статус проекта",
+   "description": "При общении с поставщиками полезно видеть общую стадию проекта без доступа к коммерческим деталям. Сейчас приходится каждый раз уточнять стадию у коллег, которые ведут проект.",
+   "solution": "Показывать краткий статус проекта и ориентировочные контрольные даты без раскрытия коммерческих условий.",
+   "attachments": [],
+   "createdAt": "2026-11-08T16:12:28.310Z",
+   "updatedAt": "2026-11-09T08:12:28.310Z",
+   "firstResponseAt": "2026-11-09T06:12:28.310Z",
+   "resolvedAt": null,
+   "closedAt": null,
+   "dueAt": null,
+   "decision": null
+  },
+  {
+   "id": "a-003",
+   "number": "A-003",
+   "type": "problem",
+   "categoryId": "c-03",
+   "department": "Проектирование",
+   "priority": "high",
+   "status": "in_progress",
+   "authorId": "u-igor",
+   "assigneeId": "m-roman",
+   "subject": "Разные обозначения одной позиции в рабочих материалах",
+   "description": "В рабочих материалах иногда встречаются разные обозначения одного изделия. Это увеличивает время проверки спецификации: приходится вручную сверять артикулы и описания.",
+   "solution": "Нужен понятный способ находить актуальную карточку позиции и правило проверки обозначений перед выпуском спецификации.",
+   "attachments": [],
+   "createdAt": "2026-11-03T18:12:28.310Z",
+   "updatedAt": "2026-11-04T16:12:28.310Z",
+   "firstResponseAt": "2026-11-04T05:12:28.310Z",
+   "resolvedAt": null,
+   "closedAt": null,
+   "dueAt": null,
+   "decision": null
+  },
+  {
+   "id": "a-004",
+   "number": "A-004",
+   "type": "suggestion",
+   "categoryId": "c-04",
+   "department": "HR",
+   "priority": "low",
+   "status": "implemented",
+   "authorId": "u-anna",
+   "assigneeId": "m-svetlana",
+   "subject": "Короткие занятия по новым товарным линейкам",
+   "description": "Было бы полезно проводить короткие занятия по новым товарным линейкам с разбором типовых запросов. Сейчас информацию приходится собирать самостоятельно из документов производителей.",
+   "solution": "Составить календарь коротких встреч по новым линейкам с разбором типовых запросов клиентов.",
+   "attachments": [],
+   "createdAt": "2026-10-02T18:12:28.310Z",
+   "updatedAt": "2026-10-12T18:12:28.310Z",
+   "firstResponseAt": "2026-10-05T06:12:28.310Z",
+   "resolvedAt": "2026-10-12T18:12:28.310Z",
+   "closedAt": null,
+   "dueAt": null,
+   "decision": {
+    "text": "Запланирован пробный обучающий семинар по новой линейке. Формат 40 минут с разбором типовых запросов.",
+    "actions": "Проведён пробный семинар, материалы размещены во внутренней базе знаний.",
+    "status": "implemented",
+    "by": "m-svetlana",
+    "at": "2026-10-12T18:12:28.310Z"
+   }
+  },
+  {
+   "id": "a-005",
+   "number": "A-005",
+   "type": "problem",
+   "categoryId": "c-05",
+   "department": "Бухгалтерия",
+   "priority": "medium",
+   "status": "needs_clarification",
+   "authorId": "u-maria",
+   "assigneeId": "m-irina",
+   "subject": "Непонятно, на каком этапе находится пакет документов",
+   "description": "При обработке документов между подразделениями возникают дополнительные вопросы о том, на каком этапе находится пакет. Приходится выяснять это в переписке, что занимает время у обеих сторон.",
+   "solution": "Хотелось бы видеть ответственного и текущий статус пакета документов в одном месте.",
+   "attachments": [],
+   "createdAt": "2026-11-07T18:12:28.310Z",
+   "updatedAt": "2026-11-08T10:12:28.310Z",
+   "firstResponseAt": "2026-11-08T10:12:28.310Z",
+   "resolvedAt": null,
+   "closedAt": null,
+   "dueAt": null,
+   "decision": null
+  },
+  {
+   "id": "a-006",
+   "number": "A-006",
+   "type": "suggestion",
+   "categoryId": "c-06",
+   "department": "Управление процессами",
+   "priority": "medium",
+   "status": "in_review",
+   "authorId": "u-maria",
+   "assigneeId": "m-alina",
+   "subject": "Памятка для операций с участием нескольких подразделений",
+   "description": "Операции, в которых последовательно участвуют несколько подразделений, описаны в разных местах. Новым сотрудникам сложно понять порядок шагов и точки передачи ответственности.",
+   "solution": "Собрать короткую пошаговую памятку и определить порядок её актуализации и владельца процесса.",
+   "attachments": [],
+   "createdAt": "2026-11-06T18:12:28.310Z",
+   "updatedAt": "2026-11-07T16:12:28.310Z",
+   "firstResponseAt": "2026-11-07T13:12:28.310Z",
+   "resolvedAt": null,
+   "closedAt": null,
+   "dueAt": null,
+   "decision": null
+  },
+  {
+   "id": "a-007",
+   "number": "A-007",
+   "type": "problem",
+   "categoryId": "c-07",
+   "department": "IT",
+   "priority": "high",
+   "status": "new",
+   "authorId": "u-maria",
+   "assigneeId": "m-viktor",
+   "subject": "Повторный ввод одних и тех же данных в разных системах",
+   "description": "Иногда повторный ввод одних и тех же сведений в разных рабочих системах занимает много времени и приводит к расхождениям в данных.",
+   "solution": "Нужна оценка, какие операции можно синхронизировать безопасно, без риска нарушить учёт.",
+   "attachments": [],
+   "createdAt": "2026-11-09T18:12:28.310Z",
+   "updatedAt": "2026-11-09T18:12:28.310Z",
+   "firstResponseAt": null,
+   "resolvedAt": null,
+   "closedAt": null,
+   "dueAt": null,
+   "decision": null
+  },
+  {
+   "id": "a-008",
+   "number": "A-008",
+   "type": "suggestion",
+   "categoryId": "c-08",
+   "department": "HR",
+   "priority": "low",
+   "status": "closed",
+   "authorId": "u-maria",
+   "assigneeId": "m-irina",
+   "subject": "Памятка по типовым ошибкам для новых сотрудников",
+   "description": "При передаче сложной задачи новому сотруднику полезен короткий разбор типовых ошибок и контактов, к которым можно обратиться за помощью. Сейчас всё передаётся устно.",
+   "solution": "Сделать короткую памятку с типовыми ошибками и контактами для помощи.",
+   "attachments": [],
+   "createdAt": "2026-09-17T18:12:28.310Z",
+   "updatedAt": "2026-09-24T18:12:28.310Z",
+   "firstResponseAt": "2026-09-19T10:12:28.310Z",
+   "resolvedAt": "2026-09-22T18:12:28.310Z",
+   "closedAt": "2026-09-24T18:12:28.310Z",
+   "dueAt": null,
+   "decision": {
+    "text": "Создана учебная инструкция с типовыми ошибками и контактами ответственных.",
+    "actions": "Инструкция размещена в общей папке подразделения.",
+    "status": "implemented",
+    "by": "m-irina",
+    "at": "2026-09-22T18:12:28.310Z"
+   }
+  },
+  {
+   "id": "a-009",
+   "number": "A-009",
+   "type": "problem",
+   "categoryId": "c-09",
+   "department": "Продажи",
+   "priority": "high",
+   "status": "in_progress",
+   "authorId": "u-dmitry",
+   "assigneeId": "m-ilya",
+   "subject": "Неясно, кто готовит и проверяет версию приложения к договору",
+   "description": "Не всегда понятно, кто готовит очередную версию приложения к договору и кто должен проверить её перед отправкой. Это приводит к повторным согласованиям и задержкам.",
+   "solution": "Разграничить этапы подготовки, проверки и утверждения приложения к договору с указанием ответственных.",
+   "attachments": [],
+   "createdAt": "2026-11-05T18:12:28.310Z",
+   "updatedAt": "2026-11-06T18:12:28.310Z",
+   "firstResponseAt": "2026-11-06T12:12:28.310Z",
+   "resolvedAt": null,
+   "closedAt": null,
+   "dueAt": null,
+   "decision": null
+  },
+  {
+   "id": "a-010",
+   "number": "A-010",
+   "type": "suggestion",
+   "categoryId": "c-10",
+   "department": "Продажи",
+   "priority": "medium",
+   "status": "in_review",
+   "authorId": "u-dmitry",
+   "assigneeId": "m-natalia",
+   "subject": "Не закрывать задачу до подтверждения результата заказчиком",
+   "description": "Рабочая задача иногда закрывается до подтверждения результата заказчиком внутри компании, из-за чего связанные вопросы теряются из общей истории обсуждения.",
+   "solution": "Не закрывать задачу до подтверждения заказчиком результата внутри компании, чтобы связанные вопросы оставались в общей истории.",
+   "attachments": [],
+   "createdAt": "2026-11-04T18:12:28.310Z",
+   "updatedAt": "2026-11-06T00:12:28.310Z",
+   "firstResponseAt": "2026-11-05T21:12:28.310Z",
+   "resolvedAt": null,
+   "closedAt": null,
+   "dueAt": null,
+   "decision": null
+  },
+  {
+   "id": "a-011",
+   "number": "A-011",
+   "type": "problem",
+   "categoryId": "c-11",
+   "department": "Продажи",
+   "priority": "high",
+   "status": "new",
+   "authorId": "u-dmitry",
+   "assigneeId": "m-natalia",
+   "subject": "Сложно прогнозировать срок ответа смежных подразделений",
+   "description": "При срочной подготовке клиентского предложения сложно прогнозировать сроки ответа от смежных подразделений. Клиент ждёт ответа, а внутренний срок неизвестен.",
+   "solution": "Показывать ожидаемый срок ответа и отправлять уведомление при задержке.",
+   "attachments": [],
+   "createdAt": "2026-11-10T06:12:28.310Z",
+   "updatedAt": "2026-11-10T06:12:28.310Z",
+   "firstResponseAt": null,
+   "resolvedAt": null,
+   "closedAt": null,
+   "dueAt": null,
+   "decision": null
+  },
+  {
+   "id": "a-012",
+   "number": "A-012",
+   "type": "suggestion",
+   "categoryId": "c-12",
+   "department": "IT",
+   "priority": "low",
+   "status": "in_review",
+   "authorId": "u-dmitry",
+   "assigneeId": "m-viktor",
+   "subject": "Единое место для итоговых решений по задаче",
+   "description": "Рабочие обсуждения распределены по нескольким каналам, из-за чего теряется контекст и итоговые решения приходится восстанавливать по переписке.",
+   "solution": "Выбрать единое место для фиксации итоговых решений по задаче и описать правила его использования.",
+   "attachments": [],
+   "createdAt": "2026-11-02T18:12:28.310Z",
+   "updatedAt": "2026-11-03T22:12:28.310Z",
+   "firstResponseAt": "2026-11-03T20:12:28.310Z",
+   "resolvedAt": null,
+   "closedAt": null,
+   "dueAt": null,
+   "decision": null
+  },
+  {
+   "id": "a-013",
+   "number": "A-013",
+   "type": "problem",
+   "categoryId": "c-13",
+   "department": "Проектный офис",
+   "priority": "medium",
+   "status": "needs_clarification",
+   "authorId": "u-elena",
+   "assigneeId": "m-egor",
+   "subject": "Не видно, какие строки спецификации изменились",
+   "description": "Когда изменяется состав оборудования в проекте, не всегда ясно, какие строки спецификации были пересмотрены. Из-за этого сложно проверить актуальность комплекта.",
+   "solution": "Нужна более заметная история изменений состава оборудования в проекте.",
+   "attachments": [],
+   "createdAt": "2026-10-30T18:12:28.310Z",
+   "updatedAt": "2026-11-01T08:12:28.310Z",
+   "firstResponseAt": "2026-11-01T08:12:28.310Z",
+   "resolvedAt": null,
+   "closedAt": null,
+   "dueAt": null,
+   "decision": null
+  },
+  {
+   "id": "a-014",
+   "number": "A-014",
+   "type": "suggestion",
+   "categoryId": "c-14",
+   "department": "Проектирование",
+   "priority": "medium",
+   "status": "in_review",
+   "authorId": "u-elena",
+   "assigneeId": "m-andrey",
+   "subject": "Показывать загруженность проектной группы на ближайшие недели",
+   "description": "При согласовании сроков запуска новых задач нет общего представления о загруженности проектной группы, поэтому договорённости достигаются в переписке.",
+   "solution": "Показывать загруженность проектной группы на ближайшие недели в укрупнённом виде, без детализации по задачам.",
+   "attachments": [],
+   "createdAt": "2026-11-05T18:12:28.310Z",
+   "updatedAt": "2026-11-06T10:12:28.310Z",
+   "firstResponseAt": "2026-11-06T07:12:28.310Z",
+   "resolvedAt": null,
+   "closedAt": null,
+   "dueAt": null,
+   "decision": null
+  },
+  {
+   "id": "a-015",
+   "number": "A-015",
+   "type": "problem",
+   "categoryId": "c-15",
+   "department": "Продажи",
+   "priority": "medium",
+   "status": "in_progress",
+   "authorId": "u-sergey",
+   "assigneeId": "m-natalia",
+   "subject": "Поручения поступают без ожидаемого результата и даты",
+   "description": "Некоторые поручения поступают без описания ожидаемого результата и даты завершения. В итоге исполнитель и постановщик по-разному понимают, что должно быть сделано.",
+   "solution": "Договориться о минимальном наборе данных при постановке задачи и подготовить шаблон с целью, сроком, приоритетом и ответственным.",
+   "attachments": [],
+   "createdAt": "2026-10-31T18:12:28.310Z",
+   "updatedAt": "2026-11-01T20:12:28.310Z",
+   "firstResponseAt": "2026-11-01T17:12:28.310Z",
+   "resolvedAt": null,
+   "closedAt": null,
+   "dueAt": null,
+   "decision": null
+  },
+  {
+   "id": "a-016",
+   "number": "A-016",
+   "type": "suggestion",
+   "categoryId": "c-04",
+   "department": "HR",
+   "priority": "low",
+   "status": "new",
+   "authorId": "u-sergey",
+   "assigneeId": "m-svetlana",
+   "subject": "Практические демонстрации оборудования для новых сотрудников",
+   "description": "Для новых сотрудников полезны практические демонстрации оборудования, а не только презентации. На практике приходится объяснять назначение устройств «на пальцах».",
+   "solution": "Провести пилотное занятие с учебными образцами оборудования.",
+   "attachments": [],
+   "createdAt": "2026-11-09T16:12:28.310Z",
+   "updatedAt": "2026-11-09T16:12:28.310Z",
+   "firstResponseAt": null,
+   "resolvedAt": null,
+   "closedAt": null,
+   "dueAt": null,
+   "decision": null
+  },
+  {
+   "id": "a-017",
+   "number": "A-017",
+   "type": "suggestion",
+   "categoryId": "c-16",
+   "department": "Административный отдел",
+   "priority": "low",
+   "status": "rejected",
+   "authorId": "u-olga",
+   "assigneeId": "m-oleg",
+   "subject": "Зона для коротких перерывов рядом с рабочими местами",
+   "description": "Предлагаю организовать отдельную небольшую зону для коротких перерывов рядом с рабочими помещениями: сейчас нет места, где можно спокойно переключиться между задачами.",
+   "solution": "Выделить небольшую зону отдыха рядом с рабочими помещениями.",
+   "attachments": [],
+   "createdAt": "2026-10-22T18:12:28.310Z",
+   "updatedAt": "2026-10-24T05:12:28.310Z",
+   "firstResponseAt": "2026-10-23T14:12:28.310Z",
+   "resolvedAt": "2026-10-24T05:12:28.310Z",
+   "closedAt": null,
+   "dueAt": null,
+   "decision": {
+    "text": "Сейчас нет подходящего помещения для отдельной зоны отдыха. Вопрос вернёмся к рассмотрению при следующей перепланировке этажа.",
+    "actions": "Предложено использовать существующую переговорную вне часов встреч; вопрос включён в план перепланировки.",
+    "status": "rejected",
+    "by": "m-oleg",
+    "at": "2026-10-24T05:12:28.310Z"
+   }
+  },
+  {
+   "id": "a-018",
+   "number": "A-018",
+   "type": "praise",
+   "categoryId": "c-16",
+   "department": "Административный отдел",
+   "priority": "low",
+   "status": "closed",
+   "authorId": "u-olga",
+   "assigneeId": "m-svetlana",
+   "subject": "Польза внутренних учебных встреч",
+   "description": "Хочу отметить пользу внутренних учебных встреч: после них стало легче обращаться к коллегам за консультацией и понятнее, к кому идти с вопросом. Было бы хорошо сохранить этот формат.",
+   "solution": null,
+   "attachments": [],
+   "createdAt": "2026-10-27T18:12:28.310Z",
+   "updatedAt": "2026-10-28T04:12:28.310Z",
+   "firstResponseAt": "2026-10-28T02:12:28.310Z",
+   "resolvedAt": "2026-10-28T04:12:28.310Z",
+   "closedAt": "2026-10-28T04:12:28.310Z",
+   "dueAt": null,
+   "decision": {
+    "text": "Положительный отзыв зафиксирован и передан организаторам обучения.",
+    "actions": "Формат внутренних встреч сохранён в плане на следующий квартал.",
+    "status": "closed",
+    "by": "m-svetlana",
+    "at": "2026-10-28T04:12:28.310Z"
+   }
+  },
+  {
+   "id": "a-019",
+   "number": "A-019",
+   "type": "problem",
+   "categoryId": "c-17",
+   "department": "Бухгалтерия",
+   "priority": "medium",
+   "status": "in_review",
+   "authorId": "u-elena",
+   "assigneeId": "m-marina",
+   "subject": "В общих папках сложно найти актуальную редакцию инструкции",
+   "description": "В общих папках трудно быстро определить актуальную редакцию инструкции: названия файлов отличаются, старые версии не архивируются.",
+   "solution": "Закрепить единые правила именования и архивирования старых версий, определить владельцев папок.",
+   "attachments": [],
+   "createdAt": "2026-11-04T18:12:28.310Z",
+   "updatedAt": "2026-11-05T14:12:28.310Z",
+   "firstResponseAt": "2026-11-05T12:12:28.310Z",
+   "resolvedAt": null,
+   "closedAt": null,
+   "dueAt": null,
+   "decision": null
+  },
+  {
+   "id": "a-021",
+   "number": "A-021",
+   "type": "problem",
+   "categoryId": "c-03",
+   "department": "Проектирование",
+   "priority": "medium",
+   "status": "in_review",
+   "authorId": "u-elena",
+   "assigneeId": "m-roman",
+   "subject": "После обновления каталога обозначения в спецификации не совпадают",
+   "description": "После обновления каталога поставщика часть обозначений в спецификации проекта перестала совпадать с карточками позиций. Приходится вручную проверять каждую строку перед отправкой.",
+   "solution": "Показывать в спецификации признак «позиция обновлена в каталоге» и предлагать актуальное обозначение.",
+   "attachments": [],
+   "createdAt": "2026-11-10T12:12:28.310Z",
+   "updatedAt": "2026-11-10T23:12:28.310Z",
+   "firstResponseAt": "2026-11-10T22:12:28.310Z",
+   "resolvedAt": null,
+   "closedAt": null,
+   "dueAt": null,
+   "decision": null
+  },
+  {
+   "id": "a-022",
+   "number": "A-022",
+   "type": "problem",
+   "categoryId": "c-05",
+   "department": "Бухгалтерия",
+   "priority": "medium",
+   "status": "in_progress",
+   "authorId": "u-dmitry",
+   "assigneeId": "m-irina",
+   "subject": "По пакету документов не видно, кто держит следующий шаг",
+   "description": "Пакет документов по клиенту переходит между подразделениями, но не видно, на чьей стороне следующий шаг. Продажи и бухгалтерия уточняют это в переписке.",
+   "solution": "Показывать в пакете текущий этап и ответственного за следующий шаг, как предложено в A-005.",
+   "attachments": [],
+   "createdAt": "2026-11-09T04:12:28.310Z",
+   "updatedAt": "2026-11-10T04:12:28.310Z",
+   "firstResponseAt": "2026-11-10T00:12:28.310Z",
+   "resolvedAt": null,
+   "closedAt": null,
+   "dueAt": null,
+   "decision": null
+  },
+  {
+   "id": "a-020",
+   "number": "A-020",
+   "type": "suggestion",
+   "categoryId": "c-18",
+   "department": "HR",
+   "priority": "low",
+   "status": "new",
+   "authorId": "u-anna",
+   "assigneeId": "m-pavel",
+   "subject": "Публиковать краткий обзор завершённых улучшений",
+   "description": "Предлагаю публиковать краткий обзор завершённых внутренних улучшений, чтобы сотрудники видели результат направленных предложений и понимали, что канал работает.",
+   "solution": "Рассмотреть формат квартальной подборки завершённых улучшений без конфиденциальных сведений.",
+   "attachments": [],
+   "createdAt": "2026-11-09T06:12:28.310Z",
+   "updatedAt": "2026-11-09T06:12:28.310Z",
+   "firstResponseAt": null,
+   "resolvedAt": null,
+   "closedAt": null,
+   "dueAt": null,
+   "decision": null
+  }
+ ],
+ "comments": [
+  {
+   "id": "cm-1",
+   "appealId": "a-002",
+   "authorId": "m-natalia",
+   "text": "Идея понятна. Нужно определить перечень доступных статусов и источник их обновления, чтобы поставщики не видели устаревшие данные.",
+   "internal": false,
+   "createdAt": "2026-11-09T06:12:28.310Z"
+  },
+  {
+   "id": "cm-2",
+   "appealId": "a-003",
+   "authorId": "m-roman",
+   "text": "Пришлите, пожалуйста, 2–3 примера спецификаций, где встречаются расхождения. По ним подготовим правило проверки.",
+   "internal": false,
+   "createdAt": "2026-11-04T05:12:28.310Z"
+  },
+  {
+   "id": "cm-3",
+   "appealId": "a-003",
+   "authorId": "u-igor",
+   "text": "Примеры отправил в рабочую папку, там же отметил строки с разными обозначениями.",
+   "internal": false,
+   "createdAt": "2026-11-04T12:12:28.310Z"
+  },
+  {
+   "id": "cm-4",
+   "appealId": "a-004",
+   "authorId": "m-svetlana",
+   "text": "Формат поддерживаю. Собираем вопросы от закупок и продаж, чтобы занятие было практическим.",
+   "internal": false,
+   "createdAt": "2026-10-05T06:12:28.310Z"
+  },
+  {
+   "id": "cm-5",
+   "appealId": "a-005",
+   "authorId": "m-irina",
+   "text": "Уточните, пожалуйста, какие виды документов и ключевые этапы согласования важны в первую очередь — от этого зависит состав статусов.",
+   "internal": false,
+   "createdAt": "2026-11-08T10:12:28.310Z"
+  },
+  {
+   "id": "cm-6",
+   "appealId": "a-006",
+   "authorId": "m-alina",
+   "text": "Согласен, что нужен владелец процесса. Предлагаю начать с двух самых частых операций.",
+   "internal": false,
+   "createdAt": "2026-11-07T13:12:28.310Z"
+  },
+  {
+   "id": "cm-7",
+   "appealId": "a-008",
+   "authorId": "m-irina",
+   "text": "Согласна. Соберём памятку по двум самым частым операциям, дальше расширим.",
+   "internal": false,
+   "createdAt": "2026-09-19T10:12:28.310Z"
+  },
+  {
+   "id": "cm-8",
+   "appealId": "a-009",
+   "authorId": "m-ilya",
+   "text": "Разбираем текущую цепочку согласования, после этого зафиксируем ответственных по этапам.",
+   "internal": false,
+   "createdAt": "2026-11-06T12:12:28.310Z"
+  },
+  {
+   "id": "cm-9",
+   "appealId": "a-010",
+   "authorId": "m-natalia",
+   "text": "Правило полезное, но нужно проверить, подходит ли оно для разных типов задач. Проверяем на нескольких командах.",
+   "internal": false,
+   "createdAt": "2026-11-05T21:12:28.310Z"
+  },
+  {
+   "id": "cm-10",
+   "appealId": "a-012",
+   "authorId": "m-viktor",
+   "text": "Сравниваем варианты. Важно не создать ещё один канал — нужно закрепить итоги в существующем.",
+   "internal": false,
+   "createdAt": "2026-11-03T20:12:28.310Z"
+  },
+  {
+   "id": "cm-11",
+   "appealId": "a-013",
+   "authorId": "m-egor",
+   "text": "Уточните, пожалуйста, в каком формате приходят исходные файлы и каким способом сейчас сравниваются версии — от этого зависит решение.",
+   "internal": false,
+   "createdAt": "2026-11-01T08:12:28.310Z"
+  },
+  {
+   "id": "cm-12",
+   "appealId": "a-014",
+   "authorId": "m-andrey",
+   "text": "Согласуем показатели загрузки и права просмотра, чтобы данные не раскрывали детали проектов.",
+   "internal": false,
+   "createdAt": "2026-11-06T07:12:28.310Z"
+  },
+  {
+   "id": "cm-13",
+   "appealId": "a-015",
+   "authorId": "m-natalia",
+   "text": "Поддерживаю. Проверим шаблон на нескольких командах и соберём обратную связь.",
+   "internal": false,
+   "createdAt": "2026-11-01T17:12:28.310Z"
+  },
+  {
+   "id": "cm-14",
+   "appealId": "a-017",
+   "authorId": "m-oleg",
+   "text": "Посмотрели доступные помещения. Свободной площади для отдельной зоны сейчас нет.",
+   "internal": false,
+   "createdAt": "2026-10-23T14:12:28.310Z"
+  },
+  {
+   "id": "cm-15",
+   "appealId": "a-018",
+   "authorId": "m-svetlana",
+   "text": "Спасибо за отзыв! Передали организаторам обучения, формат продолжим.",
+   "internal": false,
+   "createdAt": "2026-10-28T02:12:28.310Z"
+  },
+  {
+   "id": "cm-16",
+   "appealId": "a-019",
+   "authorId": "m-marina",
+   "text": "Предлагаю начать с правил именования и переноса устаревших версий в архив. Согласуем владельцев папок.",
+   "internal": false,
+   "createdAt": "2026-11-05T12:12:28.310Z"
+  },
+  {
+   "id": "cm-17",
+   "appealId": "a-021",
+   "authorId": "m-roman",
+   "text": "Это связано с обращением A-003 про разные обозначения. Соберём общее правило сверки, чтобы не исправлять каждую спецификацию отдельно.",
+   "internal": false,
+   "createdAt": "2026-11-10T22:12:28.310Z"
+  },
+  {
+   "id": "cm-18",
+   "appealId": "a-022",
+   "authorId": "m-irina",
+   "text": "Тема пересекается с обращением A-005. Предлагаю рассматривать вместе, чтобы статусы пакета были едиными для всех подразделений.",
+   "internal": false,
+   "createdAt": "2026-11-10T00:12:28.310Z"
+  }
+ ],
+ "events": [
+  {
+   "id": "e-19",
+   "appealId": "a-008",
+   "type": "created",
+   "actorId": "u-maria",
+   "createdAt": "2026-09-17T18:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-irina",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-20",
+   "appealId": "a-008",
+   "type": "comment",
+   "actorId": "m-irina",
+   "createdAt": "2026-09-19T10:12:28.310Z",
+   "text": "Согласна. Соберём памятку по двум самым частым операциям, дальше расширим.",
+   "meta": {
+    "commentId": "cm-7"
+   }
+  },
+  {
+   "id": "e-21",
+   "appealId": "a-008",
+   "type": "decision",
+   "actorId": "m-irina",
+   "createdAt": "2026-09-22T18:12:28.310Z",
+   "text": "Решение: Создана учебная инструкция с типовыми ошибками и контактами ответственных.",
+   "meta": {
+    "status": "implemented",
+    "commentText": "Создана учебная инструкция с типовыми ошибками и контактами ответственных.",
+    "actions": "Инструкция размещена в общей папке подразделения."
+   }
+  },
+  {
+   "id": "e-22",
+   "appealId": "a-008",
+   "type": "status_changed",
+   "actorId": "u-maria",
+   "createdAt": "2026-09-24T18:12:28.310Z",
+   "text": "Статус изменён на «Закрыто».",
+   "meta": {
+    "status": "closed",
+    "commentText": "Инструкцией воспользовалась, помогает. Подтверждаю закрытие."
+   }
+  },
+  {
+   "id": "e-9",
+   "appealId": "a-004",
+   "type": "created",
+   "actorId": "u-anna",
+   "createdAt": "2026-10-02T18:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-svetlana",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-10",
+   "appealId": "a-004",
+   "type": "comment",
+   "actorId": "m-svetlana",
+   "createdAt": "2026-10-05T06:12:28.310Z",
+   "text": "Формат поддерживаю. Собираем вопросы от закупок и продаж, чтобы занятие было практическим.",
+   "meta": {
+    "commentId": "cm-4"
+   }
+  },
+  {
+   "id": "e-11",
+   "appealId": "a-004",
+   "type": "decision",
+   "actorId": "m-svetlana",
+   "createdAt": "2026-10-12T18:12:28.310Z",
+   "text": "Решение: Запланирован пробный обучающий семинар по новой линейке. Формат 40 минут с разбором типовых запросов.",
+   "meta": {
+    "status": "implemented",
+    "commentText": "Запланирован пробный обучающий семинар по новой линейке. Формат 40 минут с разбором типовых запросов.",
+    "actions": "Проведён пробный семинар, материалы размещены во внутренней базе знаний."
+   }
+  },
+  {
+   "id": "e-43",
+   "appealId": "a-017",
+   "type": "created",
+   "actorId": "u-olga",
+   "createdAt": "2026-10-22T18:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-oleg",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-44",
+   "appealId": "a-017",
+   "type": "comment",
+   "actorId": "m-oleg",
+   "createdAt": "2026-10-23T14:12:28.310Z",
+   "text": "Посмотрели доступные помещения. Свободной площади для отдельной зоны сейчас нет.",
+   "meta": {
+    "commentId": "cm-14"
+   }
+  },
+  {
+   "id": "e-45",
+   "appealId": "a-017",
+   "type": "decision",
+   "actorId": "m-oleg",
+   "createdAt": "2026-10-24T05:12:28.310Z",
+   "text": "Решение: Сейчас нет подходящего помещения для отдельной зоны отдыха. Вопрос вернёмся к рассмотрению при следующей перепланировке этажа.",
+   "meta": {
+    "status": "rejected",
+    "commentText": "Сейчас нет подходящего помещения для отдельной зоны отдыха. Вопрос вернёмся к рассмотрению при следующей перепланировке этажа.",
+    "actions": "Предложено использовать существующую переговорную вне часов встреч; вопрос включён в план перепланировки."
+   }
+  },
+  {
+   "id": "e-46",
+   "appealId": "a-018",
+   "type": "created",
+   "actorId": "u-olga",
+   "createdAt": "2026-10-27T18:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-svetlana",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-47",
+   "appealId": "a-018",
+   "type": "comment",
+   "actorId": "m-svetlana",
+   "createdAt": "2026-10-28T02:12:28.310Z",
+   "text": "Спасибо за отзыв! Передали организаторам обучения, формат продолжим.",
+   "meta": {
+    "commentId": "cm-15"
+   }
+  },
+  {
+   "id": "e-48",
+   "appealId": "a-018",
+   "type": "decision",
+   "actorId": "m-svetlana",
+   "createdAt": "2026-10-28T04:12:28.310Z",
+   "text": "Решение: Положительный отзыв зафиксирован и передан организаторам обучения.",
+   "meta": {
+    "status": "closed",
+    "commentText": "Положительный отзыв зафиксирован и передан организаторам обучения.",
+    "actions": "Формат внутренних встреч сохранён в плане на следующий квартал."
+   }
+  },
+  {
+   "id": "e-33",
+   "appealId": "a-013",
+   "type": "created",
+   "actorId": "u-elena",
+   "createdAt": "2026-10-30T18:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-egor",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-39",
+   "appealId": "a-015",
+   "type": "created",
+   "actorId": "u-sergey",
+   "createdAt": "2026-10-31T18:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-natalia",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-34",
+   "appealId": "a-013",
+   "type": "clarification_requested",
+   "actorId": "m-egor",
+   "createdAt": "2026-11-01T08:12:28.310Z",
+   "text": "Уточните, пожалуйста, в каком формате приходят исходные файлы и каким способом сейчас сравниваются версии — от этого зависит решение.",
+   "meta": {
+    "commentId": "cm-11"
+   }
+  },
+  {
+   "id": "e-35",
+   "appealId": "a-013",
+   "type": "clarification_requested",
+   "actorId": "m-egor",
+   "createdAt": "2026-11-01T08:12:28.310Z",
+   "text": "Запрошено уточнение: Уточните, пожалуйста, в каком формате приходят исходные файлы и каким способом сейчас сравниваются версии — от этого зависит решение.",
+   "meta": {
+    "status": "needs_clarification",
+    "commentText": "Уточните, пожалуйста, в каком формате приходят исходные файлы и каким способом сейчас сравниваются версии — от этого зависит решение."
+   }
+  },
+  {
+   "id": "e-40",
+   "appealId": "a-015",
+   "type": "comment",
+   "actorId": "m-natalia",
+   "createdAt": "2026-11-01T17:12:28.310Z",
+   "text": "Поддерживаю. Проверим шаблон на нескольких командах и соберём обратную связь.",
+   "meta": {
+    "commentId": "cm-13"
+   }
+  },
+  {
+   "id": "e-41",
+   "appealId": "a-015",
+   "type": "status_changed",
+   "actorId": "m-natalia",
+   "createdAt": "2026-11-01T20:12:28.310Z",
+   "text": "Статус изменён на «В работе».",
+   "meta": {
+    "status": "in_progress",
+    "commentText": "Готовим шаблон постановки задачи и инструкцию к нему."
+   }
+  },
+  {
+   "id": "e-30",
+   "appealId": "a-012",
+   "type": "created",
+   "actorId": "u-dmitry",
+   "createdAt": "2026-11-02T18:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-viktor",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-5",
+   "appealId": "a-003",
+   "type": "created",
+   "actorId": "u-igor",
+   "createdAt": "2026-11-03T18:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-roman",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-31",
+   "appealId": "a-012",
+   "type": "comment",
+   "actorId": "m-viktor",
+   "createdAt": "2026-11-03T20:12:28.310Z",
+   "text": "Сравниваем варианты. Важно не создать ещё один канал — нужно закрепить итоги в существующем.",
+   "meta": {
+    "commentId": "cm-10"
+   }
+  },
+  {
+   "id": "e-32",
+   "appealId": "a-012",
+   "type": "status_changed",
+   "actorId": "m-viktor",
+   "createdAt": "2026-11-03T22:12:28.310Z",
+   "text": "Статус изменён на «На рассмотрении».",
+   "meta": {
+    "status": "in_review",
+    "commentText": "Готовим правила фиксации итогов."
+   }
+  },
+  {
+   "id": "e-6",
+   "appealId": "a-003",
+   "type": "comment",
+   "actorId": "m-roman",
+   "createdAt": "2026-11-04T05:12:28.310Z",
+   "text": "Пришлите, пожалуйста, 2–3 примера спецификаций, где встречаются расхождения. По ним подготовим правило проверки.",
+   "meta": {
+    "commentId": "cm-2"
+   }
+  },
+  {
+   "id": "e-7",
+   "appealId": "a-003",
+   "type": "comment",
+   "actorId": "u-igor",
+   "createdAt": "2026-11-04T12:12:28.310Z",
+   "text": "Примеры отправил в рабочую папку, там же отметил строки с разными обозначениями.",
+   "meta": {
+    "commentId": "cm-3"
+   }
+  },
+  {
+   "id": "e-8",
+   "appealId": "a-003",
+   "type": "status_changed",
+   "actorId": "m-roman",
+   "createdAt": "2026-11-04T16:12:28.310Z",
+   "text": "Статус изменён на «В работе».",
+   "meta": {
+    "status": "in_progress",
+    "commentText": "Готовим правило сверки номенклатуры, проверяем на примерах."
+   }
+  },
+  {
+   "id": "e-26",
+   "appealId": "a-010",
+   "type": "created",
+   "actorId": "u-dmitry",
+   "createdAt": "2026-11-04T18:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-natalia",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-49",
+   "appealId": "a-019",
+   "type": "created",
+   "actorId": "u-elena",
+   "createdAt": "2026-11-04T18:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-marina",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-50",
+   "appealId": "a-019",
+   "type": "comment",
+   "actorId": "m-marina",
+   "createdAt": "2026-11-05T12:12:28.310Z",
+   "text": "Предлагаю начать с правил именования и переноса устаревших версий в архив. Согласуем владельцев папок.",
+   "meta": {
+    "commentId": "cm-16"
+   }
+  },
+  {
+   "id": "e-51",
+   "appealId": "a-019",
+   "type": "status_changed",
+   "actorId": "m-marina",
+   "createdAt": "2026-11-05T14:12:28.310Z",
+   "text": "Статус изменён на «На рассмотрении».",
+   "meta": {
+    "status": "in_review",
+    "commentText": "Согласовываем порядок хранения и владельцев папок."
+   }
+  },
+  {
+   "id": "e-23",
+   "appealId": "a-009",
+   "type": "created",
+   "actorId": "u-dmitry",
+   "createdAt": "2026-11-05T18:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-ilya",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-36",
+   "appealId": "a-014",
+   "type": "created",
+   "actorId": "u-elena",
+   "createdAt": "2026-11-05T18:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-andrey",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-27",
+   "appealId": "a-010",
+   "type": "comment",
+   "actorId": "m-natalia",
+   "createdAt": "2026-11-05T21:12:28.310Z",
+   "text": "Правило полезное, но нужно проверить, подходит ли оно для разных типов задач. Проверяем на нескольких командах.",
+   "meta": {
+    "commentId": "cm-9"
+   }
+  },
+  {
+   "id": "e-28",
+   "appealId": "a-010",
+   "type": "status_changed",
+   "actorId": "m-natalia",
+   "createdAt": "2026-11-06T00:12:28.310Z",
+   "text": "Статус изменён на «На рассмотрении».",
+   "meta": {
+    "status": "in_review",
+    "commentText": "Проверяем правило на разных типах задач."
+   }
+  },
+  {
+   "id": "e-37",
+   "appealId": "a-014",
+   "type": "comment",
+   "actorId": "m-andrey",
+   "createdAt": "2026-11-06T07:12:28.310Z",
+   "text": "Согласуем показатели загрузки и права просмотра, чтобы данные не раскрывали детали проектов.",
+   "meta": {
+    "commentId": "cm-12"
+   }
+  },
+  {
+   "id": "e-38",
+   "appealId": "a-014",
+   "type": "status_changed",
+   "actorId": "m-andrey",
+   "createdAt": "2026-11-06T10:12:28.310Z",
+   "text": "Статус изменён на «На рассмотрении».",
+   "meta": {
+    "status": "in_review",
+    "commentText": "Согласовываем состав показателей и права доступа."
+   }
+  },
+  {
+   "id": "e-24",
+   "appealId": "a-009",
+   "type": "comment",
+   "actorId": "m-ilya",
+   "createdAt": "2026-11-06T12:12:28.310Z",
+   "text": "Разбираем текущую цепочку согласования, после этого зафиксируем ответственных по этапам.",
+   "meta": {
+    "commentId": "cm-8"
+   }
+  },
+  {
+   "id": "e-15",
+   "appealId": "a-006",
+   "type": "created",
+   "actorId": "u-maria",
+   "createdAt": "2026-11-06T18:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-alina",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-25",
+   "appealId": "a-009",
+   "type": "status_changed",
+   "actorId": "m-ilya",
+   "createdAt": "2026-11-06T18:12:28.310Z",
+   "text": "Статус изменён на «В работе».",
+   "meta": {
+    "status": "in_progress",
+    "commentText": "Готовим схему этапов и матрицу ответственных."
+   }
+  },
+  {
+   "id": "e-16",
+   "appealId": "a-006",
+   "type": "comment",
+   "actorId": "m-alina",
+   "createdAt": "2026-11-07T13:12:28.310Z",
+   "text": "Согласен, что нужен владелец процесса. Предлагаю начать с двух самых частых операций.",
+   "meta": {
+    "commentId": "cm-6"
+   }
+  },
+  {
+   "id": "e-17",
+   "appealId": "a-006",
+   "type": "status_changed",
+   "actorId": "m-alina",
+   "createdAt": "2026-11-07T16:12:28.310Z",
+   "text": "Статус изменён на «На рассмотрении».",
+   "meta": {
+    "status": "in_review",
+    "commentText": "Согласовываем черновик памятки и владельца процесса."
+   }
+  },
+  {
+   "id": "e-12",
+   "appealId": "a-005",
+   "type": "created",
+   "actorId": "u-maria",
+   "createdAt": "2026-11-07T18:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-irina",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-13",
+   "appealId": "a-005",
+   "type": "clarification_requested",
+   "actorId": "m-irina",
+   "createdAt": "2026-11-08T10:12:28.310Z",
+   "text": "Уточните, пожалуйста, какие виды документов и ключевые этапы согласования важны в первую очередь — от этого зависит состав статусов.",
+   "meta": {
+    "commentId": "cm-5"
+   }
+  },
+  {
+   "id": "e-14",
+   "appealId": "a-005",
+   "type": "clarification_requested",
+   "actorId": "m-irina",
+   "createdAt": "2026-11-08T10:12:28.310Z",
+   "text": "Запрошено уточнение: Уточните, пожалуйста, какие виды документов и ключевые этапы согласования важны в первую очередь — от этого зависит состав статусов.",
+   "meta": {
+    "status": "needs_clarification",
+    "commentText": "Уточните, пожалуйста, какие виды документов и ключевые этапы согласования важны в первую очередь — от этого зависит состав статусов."
+   }
+  },
+  {
+   "id": "e-2",
+   "appealId": "a-002",
+   "type": "created",
+   "actorId": "u-anna",
+   "createdAt": "2026-11-08T16:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-natalia",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-55",
+   "appealId": "a-022",
+   "type": "created",
+   "actorId": "u-dmitry",
+   "createdAt": "2026-11-09T04:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-irina",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-3",
+   "appealId": "a-002",
+   "type": "comment",
+   "actorId": "m-natalia",
+   "createdAt": "2026-11-09T06:12:28.310Z",
+   "text": "Идея понятна. Нужно определить перечень доступных статусов и источник их обновления, чтобы поставщики не видели устаревшие данные.",
+   "meta": {
+    "commentId": "cm-1"
+   }
+  },
+  {
+   "id": "e-58",
+   "appealId": "a-020",
+   "type": "created",
+   "actorId": "u-anna",
+   "createdAt": "2026-11-09T06:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-pavel",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-4",
+   "appealId": "a-002",
+   "type": "status_changed",
+   "actorId": "m-natalia",
+   "createdAt": "2026-11-09T08:12:28.310Z",
+   "text": "Статус изменён на «На рассмотрении».",
+   "meta": {
+    "status": "in_review",
+    "commentText": "Определяем перечень статусов совместно с проектным офисом."
+   }
+  },
+  {
+   "id": "e-42",
+   "appealId": "a-016",
+   "type": "created",
+   "actorId": "u-sergey",
+   "createdAt": "2026-11-09T16:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-svetlana",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-18",
+   "appealId": "a-007",
+   "type": "created",
+   "actorId": "u-maria",
+   "createdAt": "2026-11-09T18:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-viktor",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-56",
+   "appealId": "a-022",
+   "type": "comment",
+   "actorId": "m-irina",
+   "createdAt": "2026-11-10T00:12:28.310Z",
+   "text": "Тема пересекается с обращением A-005. Предлагаю рассматривать вместе, чтобы статусы пакета были едиными для всех подразделений.",
+   "meta": {
+    "commentId": "cm-18"
+   }
+  },
+  {
+   "id": "e-57",
+   "appealId": "a-022",
+   "type": "status_changed",
+   "actorId": "m-irina",
+   "createdAt": "2026-11-10T04:12:28.310Z",
+   "text": "Статус изменён на «В работе».",
+   "meta": {
+    "status": "in_progress",
+    "commentText": "Собираем перечень этапов для общей модели статусов."
+   }
+  },
+  {
+   "id": "e-29",
+   "appealId": "a-011",
+   "type": "created",
+   "actorId": "u-dmitry",
+   "createdAt": "2026-11-10T06:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-natalia",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-52",
+   "appealId": "a-021",
+   "type": "created",
+   "actorId": "u-elena",
+   "createdAt": "2026-11-10T12:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-roman",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-1",
+   "appealId": "a-001",
+   "type": "created",
+   "actorId": "u-anna",
+   "createdAt": "2026-11-10T22:12:28.310Z",
+   "text": "Обращение зарегистрировано в системе.",
+   "meta": {
+    "assigneeId": "m-pavel",
+    "routingRule": "category"
+   }
+  },
+  {
+   "id": "e-53",
+   "appealId": "a-021",
+   "type": "comment",
+   "actorId": "m-roman",
+   "createdAt": "2026-11-10T22:12:28.310Z",
+   "text": "Это связано с обращением A-003 про разные обозначения. Соберём общее правило сверки, чтобы не исправлять каждую спецификацию отдельно.",
+   "meta": {
+    "commentId": "cm-17"
+   }
+  },
+  {
+   "id": "e-54",
+   "appealId": "a-021",
+   "type": "status_changed",
+   "actorId": "m-roman",
+   "createdAt": "2026-11-10T23:12:28.310Z",
+   "text": "Статус изменён на «На рассмотрении».",
+   "meta": {
+    "status": "in_review",
+    "commentText": "Объединяем с задачей по правилу сверки номенклатуры."
+   }
+  }
+ ],
+ "notifications": [
+  {
+   "id": "n-1",
+   "userId": "u-elena",
+   "appealId": "a-021",
+   "text": "A-021: изменён статус обращения",
+   "createdAt": "2026-11-10T23:12:28.310Z",
+   "read": false
+  },
+  {
+   "id": "n-2",
+   "userId": "m-pavel",
+   "appealId": "a-001",
+   "text": "Новое обращение A-001: В заявках на закупку не хватает назначения и параметров изделия",
+   "createdAt": "2026-11-10T22:12:28.310Z",
+   "read": false
+  },
+  {
+   "id": "n-3",
+   "userId": "u-elena",
+   "appealId": "a-021",
+   "text": "A-021: новый комментарий ответственного",
+   "createdAt": "2026-11-10T22:12:28.310Z",
+   "read": false
+  },
+  {
+   "id": "n-4",
+   "userId": "m-roman",
+   "appealId": "a-021",
+   "text": "Новое обращение A-021: После обновления каталога обозначения в спецификации не совпадают",
+   "createdAt": "2026-11-10T12:12:28.310Z",
+   "read": false
+  },
+  {
+   "id": "n-5",
+   "userId": "m-natalia",
+   "appealId": "a-011",
+   "text": "Новое обращение A-011: Сложно прогнозировать срок ответа смежных подразделений",
+   "createdAt": "2026-11-10T06:12:28.310Z",
+   "read": false
+  },
+  {
+   "id": "n-6",
+   "userId": "u-dmitry",
+   "appealId": "a-022",
+   "text": "A-022: изменён статус обращения",
+   "createdAt": "2026-11-10T04:12:28.310Z",
+   "read": false
+  },
+  {
+   "id": "n-7",
+   "userId": "u-dmitry",
+   "appealId": "a-022",
+   "text": "A-022: новый комментарий ответственного",
+   "createdAt": "2026-11-10T00:12:28.310Z",
+   "read": false
+  },
+  {
+   "id": "n-8",
+   "userId": "m-viktor",
+   "appealId": "a-007",
+   "text": "Новое обращение A-007: Повторный ввод одних и тех же данных в разных системах",
+   "createdAt": "2026-11-09T18:12:28.310Z",
+   "read": false
+  },
+  {
+   "id": "n-9",
+   "userId": "m-svetlana",
+   "appealId": "a-016",
+   "text": "Новое обращение A-016: Практические демонстрации оборудования для новых сотрудников",
+   "createdAt": "2026-11-09T16:12:28.310Z",
+   "read": false
+  },
+  {
+   "id": "n-10",
+   "userId": "u-anna",
+   "appealId": "a-002",
+   "text": "A-002: изменён статус обращения",
+   "createdAt": "2026-11-09T08:12:28.310Z",
+   "read": false
+  },
+  {
+   "id": "n-11",
+   "userId": "u-anna",
+   "appealId": "a-002",
+   "text": "A-002: новый комментарий ответственного",
+   "createdAt": "2026-11-09T06:12:28.310Z",
+   "read": false
+  },
+  {
+   "id": "n-12",
+   "userId": "m-pavel",
+   "appealId": "a-020",
+   "text": "Новое обращение A-020: Публиковать краткий обзор завершённых улучшений",
+   "createdAt": "2026-11-09T06:12:28.310Z",
+   "read": false
+  },
+  {
+   "id": "n-13",
+   "userId": "m-irina",
+   "appealId": "a-022",
+   "text": "Новое обращение A-022: По пакету документов не видно, кто держит следующий шаг",
+   "createdAt": "2026-11-09T04:12:28.310Z",
+   "read": false
+  },
+  {
+   "id": "n-14",
+   "userId": "m-natalia",
+   "appealId": "a-002",
+   "text": "Новое обращение A-002: Показывать поставщикам краткий статус проекта",
+   "createdAt": "2026-11-08T16:12:28.310Z",
+   "read": false
+  }
+ ],
+ "counters": {
+  "comment": 18,
+  "event": 58,
+  "notification": 14
+ }
+}
